@@ -184,7 +184,7 @@ public class Main {
                }
                System.out.println("The updated cart: ");
                System.out.println("-----------------------");
-               if (cart.isEmpty()) {
+               if (cart.size() == 0) {
                   System.out.println("Your cart is empty");
                   System.out.println("-----------------------");
                } else {
@@ -239,7 +239,7 @@ public class Main {
             String userType = sc.nextLine();
             if (userType.equalsIgnoreCase("admin")){
                System.out.println("Admin login: ");
-               if (adminPassword.isEmpty()) {
+               if (adminPassword.length() ==0) {
                   System.out.println("You need to set password");
                   System.out.println("Enter new password");
                   adminPassword = sc.nextLine();
